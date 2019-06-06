@@ -1,0 +1,34 @@
+.page-main__articles--plus {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-main__articles {
+    width: 50%;
+  }
+  .page-main__news {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    flex-wrap: nowrap;
+  }
+  .page-main__articles {
+    width: 25%;
+  }
+  .page-main__news {
+    width: 25%;
+  }
+  .page-main__articles--plus {
+    display: block;
+  }
+  .page-main__side {
+    width: 25%;
+  }
+}
