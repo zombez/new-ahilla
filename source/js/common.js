@@ -1,30 +1,19 @@
 "use strict";
 
-// let el = document.getElementsByClassName('site-list__item');
-// for(var i=0; i<el.length; i++) {
-//   el[i].addEventListener("mouseenter", showSub, false);
-//   el[i].addEventListener("mouseleave", hideSub, false);
-// }
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
 
-// function showSub(e) {
-//   if(this.children.length>1) {
-//      this.children[1].style.height = "auto";
-//      this.children[1].style.overflow = "visible";
-//      this.children[1].style.opacity = "1";
-//   } else {
-//      return false;
-//   }
-// }
+navMain.classList.remove('main-nav--nojs');
 
-// function hideSub(e) {
-//   if(this.children.length>1) {
-//     this.children[1].style.height = "0px";
-//      this.children[1].style.overflow = "hidden";
-//      this.children[1].style.opacity = "0";
-//   } else {
-//      return false;
-//   }
-// }
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
 
 const listItems = document.querySelectorAll('.site-list__sub-menu');
 const testLists = document.querySelectorAll('.sub-menu');
