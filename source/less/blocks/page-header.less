@@ -17,7 +17,6 @@
 
 .page-header__logo svg:hover {
   fill: @hov;
-  stroke: @st;
 }
 
 .page-header__logo svg:active {
@@ -85,9 +84,10 @@
   display: none;
   position: absolute;
   left: 0;
-  top: 45px;
+  top: 28px;
   list-style: none;
   padding: 0;
+  padding-top: 10px;
 }
 
 .sub-menu--activ {
@@ -97,14 +97,63 @@
 // svg треугольника
 
 .site-list__img {
-  padding: 0 10px;
+  display: block;
+  width: 31px;
+  position: relative;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.site-list__img--activ {
-  transform: rotate(-180deg);
+.site-list__img::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   transition: 0.3s;
+}
+
+.site-list__img--activ::after {
+  transform: rotate(-180deg);
+  background-image: url("../img/icon-down-dir--white.svg");
+  transition: 0.3s;
+}
+
+.site-list__img {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: @hov;
+    transform: translateY(-101%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+
+    &:before {
+      transform: translateY(0);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.site-list__img--activ::before {
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
 }
 
 // бургер
@@ -266,26 +315,34 @@
 
   // меню для планшета
 
-  // .main-nav {
+  .main-nav {
 
-  // }
+  }
 
   // список меню для планшета
 
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    text-transform: none;
+    padding-top: 10px;
   }
 
   .site-list__item {
+    // border-top: 1px solid @st;
+    // border-bottom: 1px solid @st;
+    border-left: 1px solid @st;
+  }
+
+  .site-list__item:last-child {
+    border-right: 1px solid @st;
   }
 
   .site-list__item a {
+    text-transform: uppercase;
     padding-top: 3px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -294,7 +351,7 @@
       content: '';
       position: absolute;
       background-color: @hov;
-      transform: translateX(-100%);
+      transform: translateX(-101%);
       top: 0;
       left: 0;
       bottom: 0;
@@ -304,12 +361,17 @@
 
     &:hover {
       color: #ffffff;
+      transition: 0.5s ease-in-out;
 
       &:before {
         transform: translateX(0);
         transition: 0.5s ease-in-out;
       }
     }
+  }
+
+  .site-list__sub-menu a {
+    padding-right: 10px;
   }
 
 
@@ -319,20 +381,9 @@
 
   // подменю для планшета
 
-  .sub-menu {
-    // display: none;
-    position: absolute;
-    top: 50px;
-    left: 176px;
-  }
-
   .sub-menu li {
     background-color: #ffffff;
   }
-
-  // .sub-menu__second {
-  //   left: 251px;
-  // }
 
   // бургер для планшета
 
@@ -353,8 +404,9 @@
 @media (min-width: @desktop-width) {
 
   .page-header__wrapper {
-    max-width: 1280px;
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 10px 20px;
   }
 
   // логотип для монитора
@@ -366,7 +418,7 @@
   // меню для монитора
 
   .main-nav {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   // .main-nav__toggle {
