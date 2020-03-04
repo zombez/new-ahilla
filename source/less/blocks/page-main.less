@@ -1,15 +1,26 @@
 .page-main__wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 25px 25px 0 25px;
+  background-color: burlywood;
 }
 
 .page-main__articles--plus {
   display: none;
 }
 
+.page-main__articles,
+.page-main__news {
+  background-color: cornflowerblue;
+}
+
+.page-main__side {
+  background-color: darkcyan;
+}
+
+
 @media (min-width: @tablet-width) {
   .page-main__wrapper {
-    padding: 25px 25px 0 25px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -23,25 +34,29 @@
     width: 50%;
   }
 
-  .page-main__side {
-    padding-left: 150px
-  }
+  // .page-main__side {
+  //   padding-left: 150px
+  // }
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    flex-wrap: nowrap;
-  }
+  // .page-main {
+  //   flex-wrap: nowrap;
+  // }
+
   .page-main__articles {
-    width: 25%;
+    width: 33%;
   }
+
   .page-main__news {
-    width: 25%;
+    width: 33%;
+  }
+
+  .page-main__side {
+    width: 30%;
+    margin-left: 30px;
   }
   .page-main__articles--plus {
     display: block;
-  }
-  .page-main__side {
-    width: 25%;
   }
 }
