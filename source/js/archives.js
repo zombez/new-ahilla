@@ -1,4 +1,4 @@
-function() {
+(function() {
 	let dropown = document.getElementById( 'archives' );
 	function onSelectChange() {
 		if ( dropown.options[
@@ -8,4 +8,4 @@ function() {
 		}
 	}
 	dropown.onchange = onSelectChange;
-};
+});
