@@ -175,39 +175,11 @@
   border: none;
 }
 
-// .page-header__search {
-//   position: relative;
-//   max-width: 50px;
-// }
-// .kt {
-//   display: inline-block;
-// }
+// кнопка найти
 
-// .search-toggle {
-//   padding: 10px 15px;
-//   border: none;
-//   border-left: 1px solid #f0f0f0;
-//   border-right: 1px solid #f0f0f0;
-//   color: #666;
-//   background-color: transparent;
-//   outline: 0;
-// }
-
-// .search-form {
-//   width: 200px;
-//   position: absolute;
-//   bottom: -100px;
-//   right: 0;
-//   transition: all 0.4s;
-//   transform: translate(0, -10px);
-//   opacity: 0;
-//   visibility: hidden;
-// }
-
-// .ty {
-//   display: block;
-//   margin-top: 0em;
-// }
+.page-header__search {
+   display: none;
+}
 
 @media (max-width: @mobile-width-only) {
 
@@ -433,6 +405,10 @@
   .main-nav--closed .site-list__item {
     display: flex;
   }
+
+  .page-header__search {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -483,4 +459,58 @@
   //   padding: 26px 20px;
   // }
   // .site-list__item a:active {}
+
+  // кнопка найти
+
+  .page-header__search {
+    max-width: 50px;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+  }
+
+  .search-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    // color: #000000;
+    background-color: #7971e2;
+    outline: 0;
+  }
+
+  .search__img {
+    // width: 10px;
+    height: 5px;
+    display: block;
+    position: relative;
+  }
+
+  .search__img::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    left: -9px;
+    background-image: url("../img/icon-find.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .search-form {
+    width: 200px;
+    position: absolute;
+    bottom: -30px;
+    // right: 0;
+    // transition: all 0.4s;
+    // transform: translate(0, -10px);
+    // opacity: 0;
+    // visibility: hidden;
+  }
+
+  .ty {
+    display: block;
+    margin-top: 0em;
+  }
 }
