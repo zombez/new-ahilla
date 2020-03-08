@@ -226,14 +226,11 @@
 
   .main-nav--closed .main-nav__toggle::before {
     content: "";
-
     position: absolute;
-    top: 15px;
-    left: 15px;
-
     width: 40px;
     height: 4px;
-
+    top: 15px;
+    left: 15px;
     background-color: @st;
     box-shadow: 0 10px 0 0 @st, 0 20px 0 0 @st;
   }
@@ -481,53 +478,86 @@
   }
 
   .search--closed .search-form {
-    // display: none;
+    display: none;
   }
 
-  .search--opened .search-toggle {
-    // height: 8px;
-    // display: block;
-    // position: relative;
-  }
-
-  // svg кнопки найти
-
-  .search__find {
+  .search--closed .search-toggle {
     height: 8px;
     display: block;
     position: relative;
   }
 
-  .search__find::before {
-    position: absolute;
+  .search--closed .search-toggle::before {
     content: "";
+    position: absolute;
     width: 15px;
     height: 15px;
-    top: -3px;
-    left: -7px;
+    top: 3px;
+    left: 7px;
     background-image: url("../img/icon-find.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
-  // svg креста
-
-  .search__cross {
+  .search--opened .search-toggle {
     display: block;
     position: relative;
   }
 
-  .search__cross::before {
-    position: absolute;
+  .search--opened .search-toggle::before {
     content: "";
+    position: absolute;
     width: 15px;
     height: 15px;
-    top: -11px;
-    left: -7px;
+    top: 3px;
+    left: 7px;
     background-image: url("../img/icon-cross.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  .search--nojs .search-toggle {
+    // display: none;
+  }
+
+  // svg кнопки найти
+
+  // .search__find {
+  //   height: 8px;
+  //   display: block;
+  //   position: relative;
+  // }
+
+  // .search__find::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 15px;
+  //   height: 15px;
+  //   top: -3px;
+  //   left: -7px;
+  //   background-image: url("../img/icon-find.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // // svg креста
+
+  // .search__cross {
+  //   display: block;
+  //   position: relative;
+  // }
+
+  // .search__cross::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 15px;
+  //   height: 15px;
+  //   top: -11px;
+  //   left: -7px;
+  //   background-image: url("../img/icon-cross.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
   // форма кнопки найти
 

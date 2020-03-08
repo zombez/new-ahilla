@@ -48,3 +48,18 @@ for (let i = 0; i < listItems.length; i++) {
   addListMouseoutListener(item, list, svg);
   addListClickListener(svg, list);
 }
+
+const search = document.querySelector('.search');
+const searchToggle = document.querySelector('.search-toggle');
+
+search.classList.remove('main-nav--nojs');
+
+searchToggle.addEventListener('click', function() {
+  if (search.classList.contains('search--closed')) {
+    search.classList.remove('search--closed');
+    search.classList.add('search--opened');
+  } else {
+    search.classList.add('search--closed');
+    search.classList.remove('search--opened');
+  }
+});
