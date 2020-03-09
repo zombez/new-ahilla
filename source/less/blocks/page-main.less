@@ -22,6 +22,41 @@
   overflow: hidden;
 }
 
+// нумерация страниц журнала
+
+.newszine-pagination {
+  width: 100%;
+  // margin-left: 140px;
+}
+
+.pagination__nav {
+  margin: 20px 0;
+  // padding-left: 120px;
+  display: block;
+  border-radius: 4px;
+}
+
+.pagination__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.pagination__numbers {
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+}
+
+.dots {
+  padding: 0;
+  border: none;
+}
+
 // бар
 
 .page-main__side {
@@ -58,6 +93,12 @@
   .page-main__articles {
     width: 50%;
     padding: 0 25px 0 25px;
+  }
+
+  // нумерация страниц журнала в планшете
+
+  .newszine-pagination {
+    margin-left: -140px;
   }
 
   // бар в планшете
