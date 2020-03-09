@@ -5,6 +5,8 @@
   background-color: burlywood;
 }
 
+// блоки
+
 .page-main__articles--plus {
   display: none;
 }
@@ -13,20 +15,28 @@
   background-color: cornflowerblue;
 }
 
+.articles__item {
+  height: 600px;
+  margin: 25px 0 25px 0;
+  background-color: sienna;
+  overflow: hidden;
+}
+
+// бар
+
 .page-main__side {
   background-color: darkcyan;
 }
 
-.articles__item {
-  height: 600px;
-  overflow: hidden;
-  margin: 25px 0 25px 0;
-  background-color: sienna;
+.article__main {
+  padding-left: 15px;
 }
 
 .news__item {
   background-color: gainsboro;
 }
+
+// заголовок h3 в баре
 
 .new__topic {
   padding: 10px;
@@ -43,10 +53,14 @@
     flex-wrap: wrap;
   }
 
+  // блоки в планшете
+
   .page-main__articles {
     width: 50%;
     padding: 0 25px 0 25px;
   }
+
+  // бар в планшете
 
   // .page-main__side {
   //   padding-left: 150px
@@ -59,19 +73,21 @@
 }
 
 @media (min-width: @desktop-width) {
-  // .page-main {
-  //   flex-wrap: nowrap;
-  // }
+
+  // блоки в мониторе
+
+  .page-main__articles--plus {
+    display: block;
+  }
 
   .page-main__articles {
     width: 33%;
   }
 
+  // бар в мониторе
+
   .page-main__side {
     width: 30%;
     margin-left: 49px;
-  }
-  .page-main__articles--plus {
-    display: block;
   }
 }
