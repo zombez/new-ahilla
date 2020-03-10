@@ -26,14 +26,16 @@
 
 .newszine-pagination {
   width: 100%;
-  // margin-left: 140px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .pagination__nav {
-  margin: 20px 0;
-  // padding-left: 120px;
   display: block;
-  border-radius: 4px;
+  position: absolute;
+  top: -10px;
 }
 
 .pagination__text {
@@ -46,6 +48,7 @@
 .pagination__numbers {
   padding: 5px 10px;
   border: 1px solid #000000;
+  border-radius: 4px;
   color: #000000;
   background-color: #ffffff;
   outline: 0;
@@ -98,7 +101,8 @@
   // нумерация страниц журнала в планшете
 
   .newszine-pagination {
-    margin-left: -140px;
+    right: 200px;
+    // margin-right: 40px;
   }
 
   // бар в планшете
