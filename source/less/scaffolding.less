@@ -60,6 +60,13 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  // ленивая загрузка
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {
