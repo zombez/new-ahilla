@@ -83,3 +83,33 @@ searchToggle.addEventListener('click', function() {
 	}
 	dropown.onchange = onSelectChange;
 })();
+
+// для фото
+
+// let bLazy = new Blazy({
+//   breakpoints: [{
+// width: 700 // Max-width
+//     , src: 'data-src-small'
+// }]
+// , success: function(element){
+// setTimeout(function(){
+// let parent = element.parentNode;
+// parent.className = parent.className.replace(/\bloading\b/,'');
+// }, 200);
+//   }
+// });
+
+
+// let bLazy = new Blazy({
+//   success: function(){
+//     updateCounter();
+//   }
+// });
+
+// let imageLoaded = 0;
+// let eleCountLoadedImages = document.getElementById('loaded-images');
+
+// function updateCounter() {
+//   imageLoaded++;
+//   eleCountLoadedImages.innerHTML = imageLoaded;
+// }
