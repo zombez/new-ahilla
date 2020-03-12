@@ -16,7 +16,7 @@
 }
 
 .articles__item {
-  height: 600px;
+  height: 400px;
   margin: 25px 0 25px 0;
   background-color: sienna;
   overflow: hidden;
@@ -47,12 +47,42 @@
 
 .pagination__numbers {
   padding: 5px 10px;
-  border: 1px solid #000000;
-  border-radius: 4px;
+  border-left: 1px solid @st;
   color: #000000;
   background-color: #ffffff;
   outline: 0;
   text-decoration: none;
+
+  // text-transform: uppercase;
+  // padding-top: 3px;
+  // padding-bottom: 2px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // position: relative;
+  // overflow: hidden;
+  // z-index: 1;
+
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   background-color: @hov;
+  //   transform: translateX(-101%);
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   z-index: -1;
+  // }
+
+  // &:hover {
+  //   color: #ffffff;
+  //   transition: 0.5s ease-in-out;
+
+  //   &:before {
+  //     transform: translateX(0);
+  //     transition: 0.5s ease-in-out;
+  //   }
+  // }
 }
 
 .dots {
@@ -101,8 +131,13 @@
   // нумерация страниц журнала в планшете
 
   .newszine-pagination {
-    margin-left: -190px;
+    margin-left: -185px;
     display: block;
+  }
+
+  .pagination__link .site-list__item {
+    display: flex;
+    flex-direction: row;
   }
 
   // бар в планшете
