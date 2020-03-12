@@ -95,8 +95,13 @@ searchToggle.addEventListener('click', function() {
 
 var blazy = new Blazy({
   breakpoints: [{
-    width: 430,
-    src: 'data-mobile-src'
+    width: 658,
+    src: 'data-src-mobile'
+  },
+  {
+    width: 1280,
+    src: 'data-src-tablet'
   }],
+  selector: 'img',
   offset: 1000
 });
