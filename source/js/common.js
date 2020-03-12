@@ -95,6 +95,7 @@ searchToggle.addEventListener('click', function() {
 
 var blazy = new Blazy({
   breakpoints: [{
-    
-  }]
+    width: 230,
+    src: 'data-mobail-src'
+  }],
 });
