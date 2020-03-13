@@ -35,7 +35,7 @@
 .pagination__nav {
   display: block;
   position: absolute;
-  top: -10px;
+  top: -20px;
 }
 
 .pagination__text {
@@ -45,13 +45,24 @@
   overflow: hidden;
 }
 
-.pagination__numbers {
+.pagination__list {
+  padding: 5px 10px;
+  display: flex;
+  list-style: none;
+}
+
+.pagination__item {
   padding: 5px 10px;
   border-left: 1px solid @st;
-  color: #000000;
-  background-color: #ffffff;
-  outline: 0;
-  text-decoration: none;
+}
+
+// .pagination__numbers {
+  // padding: 5px 10px;
+  // border-left: 1px solid @st;
+  // color: #000000;
+  // background-color: #ffffff;
+  // outline: 0;
+  // text-decoration: none;
 
   // text-transform: uppercase;
   // padding-top: 3px;
@@ -83,7 +94,18 @@
   //     transition: 0.5s ease-in-out;
   //   }
   // }
-}
+// }
+
+// .pagination__numbers:hover {
+//   color: #ffffff;
+//   background-color: @st;
+// }
+
+// .pagination__numbers:nth-child(5):hover {
+//   color: #000000;
+//   background-color: #ffffff;
+// }
+
 
 .dots {
   padding: 0;
@@ -130,15 +152,15 @@
 
   // нумерация страниц журнала в планшете
 
-  .newszine-pagination {
-    margin-left: -185px;
-    display: block;
-  }
+  // .newszine-pagination {
+  //   margin-left: -185px;
+  //   display: block;
+  // }
 
-  .pagination__link .site-list__item {
-    display: flex;
-    flex-direction: row;
-  }
+  // .pagination__link .site-list__item {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 
   // бар в планшете
 
