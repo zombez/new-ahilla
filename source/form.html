@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Ahilla</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <svg class="page-header__logo-svg" width="200" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530.3 105.4"><g stroke="#000" stroke-miterlimit="10"><path d="M120.3.6c-5.6 1-37.6 31.9-41.6 35.5s-8.8 8.6-11.4 8.9S56 40.6 48 40.7s-13.4 9.6-6.6 9.4 17 3.3 15.4 5S12 90 4.4 95.9s-1.8 7.6-1.8 7.6c7.6 4.9 14.1-4.6 17.4-7s42.1-37.4 46.3-37.6c4.2-.3 28.2 25.1 35.8 31.3s14.6-5.1 16-10.5c1.9-7.4 10.2-50.9 13.5-64.5S123.8 0 120.3.6zM110 67.1c-2 8-4.4 7.7-6.6 6.3-3-1.9-26.9-22.2-26.9-22.2-2.7-3.6 26.5-28.2 32.7-34s10.8-4.9 10.5-.8c-.3 4.2-6.8 39.4-9.7 50.7zM208.9 44.4c1.8-4.6-2.8-5.8-7.4-2.9S177.9 57 176.3 57.8s-3-3.8-.9-9.3 3.1-5.5 5.1-8.7-2.4-5-7.6-2.7-9.8 10.3-9.8 16.6c0 6.4-1.2 11.7-2.4 12.8s-25.3 16.7-29.2 20.2c-1.3 1.2-3.5 8.9 5.5 4.8 9.3-4.3 21.4-16 23-16.6s4.8 16.5 23.9 18c19.1 1.5 17.5-4.8 17.3-6.9-.1-1.3-7.5 3.3-13.9-.9S172.2 73 174.4 68.5s32.8-19.5 34.5-24.1zM284 83.1c-4 .6-8.9 1.4-8.8-3.3s13.4-23.6 22.6-32.4-1.5-7.5-5.5-7-57.8 42.9-67.6 37.8c-2.3-1.2 26.6-31.5 30.3-35.3 3.6-3.8 4.1-8.1 0-11.1-5.1-3.8-10.5 6-10.5 6-5.5 8.7-39.8 43.3-35.2 53 5.3 11.4 72.1-36.4 66.5-30s-21.4 26.7-14.5 29.6c6.9 2.9 26.7-7.9 22.7-7.3zM354.3 81.3c-4-1.3-2-8.6.9-14.6s14.6-21.9 18-25.3-3.5-4.5-11.3-2.3-19.6 12.1-26 17.4-26.4 20.5-31 24.3c-3.3 2.6-11.7 2.1-15 2.8-2.5.5-3.6 1.6-4 3.9 0 0 2.3 3.9 10.3 3.5 9.5-.4 32.3-23.6 38.6-27.6 6.4-4.1 14.1-10.6 16.8-10.6S333.3 76.9 339 87.5c3.5 6.5 15 3.5 20.3-2.5 3.8-4.4.7-1.9-5-3.7zM432.8 81.3c-4-1.3-2-8.6.9-14.6s14.6-21.9 18-25.3-3.5-4.5-11.3-2.3-19.6 12.1-26 17.4-26.4 20.5-31 24.3c-3.3 2.6-11.7 2.1-15 2.8-2.5.5-3.6 1.6-4 3.9 0 0 2.3 3.9 10.3 3.5 9.5-.4 32.3-23.6 38.6-27.6 6.4-4.1 14.1-10.6 16.8-10.6S411.9 77 417.6 87.6c3.5 6.5 15 3.5 20.3-2.5 3.7-4.5.6-2-5.1-3.8zM524.2 52.7c7.4-7.8 6.7-8.5 2.5-8s-9.9 5.3-7 1.1 2.5-9.5-3.1-11.1c-7.5-2.2-30.9 11.3-55 30.5S447 90.4 447 90.4c2.5 1.1 6.6 1 12-.6 6.6-1.9 22.1-10 27.3-13s21.1-14.9 18.9-12.1-10.5 15-10.8 21.3 4.5 7.3 13.3 6.8c8.7-.5 18.7-8.6 10.7-7.5-8 1.1-11.6 0-11.4-5.1s9.8-19.7 17.2-27.5zm-50.1 25.5c-6.3 3.9-15.8 7.9-17.3 6-6.5-8.5 45.8-46.7 55.8-43.7 2.5.7 1.3 3.3-.7 6.4-7.9 12.6-31.4 27.4-37.8 31.3z"/></g>
+          </svg>
+        </a>
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="site-list__item site-list__sub-menu">
+              <a href="#">Мысли</a>
+              <span class="site-list__img"></span>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">Колонка редактора</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Блоги</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Комментарии</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Нам пишут</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Вопросы и ответы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-list__item site-list__sub-menu">
+              <a href="#">Истории</a>
+              <span class="site-list__img"></span>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">Культура</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Религия</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Проза</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Общество</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Мониторинг СМИ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Проекты</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Авторы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Наши книги</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+
+            <div class="page-header__search search search--closed search--nojs">
+              <button class="search-toggle">
+              </button>
+              <div class="search-form">
+                <form class="ty" action="https://ahilla.ru/" method="get" accept-charset="utf-8">
+                  <input type="search" class="form-control" name="s" value placeholder="Введите запрос...">
+                </form>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="visually-hidden"></h1>
+        <section class="page-main__articles articles">
+          <h2 class="visually-hidden"></h2>
+            <article class="articles__item article">
+                <!-- <picture>
+                  <source type="" media="(min-width: 1200px)" srcset="./img/-desktop@2x.jpg 2x, ./img/-desktop@1x.jpg">
+                  <source type="" media="(min-width: 768px)" srcset="./img/-tablet@2x.jpg 2x, ./img/-tablet@1x.jpg">
+                  <source type="" media="(max-width: 767px)" srcset="./img/-mobile@2x.jpg 2x, ./img/-mobile@1x.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/-desktop@2x.jpg 2x, ./img/-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/-tablet@2x.jpg 2x, ./img/-tablet@1x.jpg">
+                  <source media="(max-width: 767px)" srcset="./img/-mobile@2x.jpg 2x, ./img/-mobile@1x.jpg">
+                  <img class="article__img" src="img/john_muir.jpg" width="700" height="400" alt="john_muir">
+                </picture> -->
+                <img class="article__img" src="img/loading.svg"
+                data-src="img/john_muir.jpg"
+                data-src-mobile="img/1.jpg"
+                data-src-tablet="img/2.jpg"
+                width="700" height="400" alt="john_muir">
+
+                <h3 class="article__topic">
+                  Джон Мюр: «Божья любовь проявляется в пейзаже, как в лице»
+                </h3>
+                <p>14 марта 2020 ахила</p>
+                <span>Просмотры: 266</span>
+
+                <section class="article__main">
+                  <a class="article__source" href="#">
+                    Алексей Марков
+                  </a>
+                  <p>
+                    Натуралист, философ, исследователь ледников, «Джон с гор» и «Отец национальных парков», Джон Мюр (John Muir) был еще и «Горным Иоанном Крестителем». Родился в Шотландии в 1838 г. Попал в Америку в 11 лет, семья переехала и устроилась в Висконсине. С детства воспитанный в строгих пресвитерианских традициях, он хорошо знал Библию. Окончил университет. Оказался со временем в совсем еще ненаселённой тогда Калифорнии. Был поражен красотой гор и пустынь… Я не стану описывать его   многочисленные заслуги,
+                  </p>
+                  <div></div>
+                    <h3>Справка</h3>
+                    <p>протоиерей александр пашков (1971 г.р.), в <br>священном сане с 1993-го.</p>
+                  </div>
+                  <p>фото: globus.aquaviva.ru</p>
+
+                  <div>
+                    <h3>Читайте также:</h3>
+                    <ul>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                      <li>
+                        <a href="">Волгоградская епархия не боится коронавируса и не отменит пасхальный крестный ход</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p>Если вам нравится наша работа — поддержите нас:</p>
+                    <p>Карта Сбербанка: 4276 1600 2495 4340 (Плужников Алексей Юрьевич)</p>
+                    <p>Или с помощью этой формы, вписав любую сумму:</p>
+                    <form action="">
+                      <p>Назначение перевода</p>
+                      <label for="">Поддержка проекта
+                        <input type="text" placeholder="100р">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <button>Пожертвовать</button>
+                      </label>
+                    </form>
+                  </div>
+
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="">facebook</a>
+                      </li>
+                      <li>
+                        <a href="">vkontakt</a>
+                      </li>
+                      <li>
+                        <a href="">twitter</a>
+                      </li>
+                      <li>
+                        <a href="">однакласники</a>
+                      </li>
+                      <li>
+                        <a href="">livejournal</a>
+                      </li>
+                      <li>
+                        <a href="">telegram</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3>ПОХОЖИЕ ЗАПИСИ</h3>
+                    <article class="articles__item article">
+                      <img class="article__img" src="img/loading.svg"
+                      data-src="img/john_muir.jpg"
+                      data-src-mobile="img/1.jpg"
+                      data-src-tablet="img/2.jpg"
+                      width="700" height="400" alt="john_muir">
+
+                      <h3 class="article__topic">
+                        Джон Мюр: «Божья любовь проявляется в пейзаже, как в лице»
+                      </h3>
+                      <section class="article__main">
+                        <p>
+                          Натуралист, философ, исследователь ледников, «Джон с гор» и «Отец национальных парков», Джон Мюр (John Muir) был еще и «Горным Иоанном Крестителем». Родился в Шотландии в 1838 г. Попал в Америку в 11 лет, семья переехала и устроилась в Висконсине. С детства воспитанный в строгих пресвитерианских традициях, он хорошо знал Библию. Окончил университет. Оказался со временем в совсем еще ненаселённой тогда Калифорнии. Был поражен красотой гор и пустынь… Я не стану описывать его   многочисленные заслуги,
+                        </p>
+                        <a href="">ПОДРОБНЕЕ</a>
+                      </section>
+                      <footer class="article__footer">
+                      </footer>
+                    </article>
+                  </div>
+                </section>
+                <footer class="article__footer">
+                </footer>
+              </article>
+
+              <!-- <article class="articles__item article">
+                <img class="article__img" src="img/loading.svg"
+                data-src="img/john_muir.jpg"
+                data-src-mobile="img/1.jpg"
+                data-src-tablet="img/2.jpg"
+                width="700" height="400" alt="john_muir">
+
+                <h3 class="article__topic">
+                  Джон Мюр: «Божья любовь проявляется в пейзаже, как в лице»
+                </h3>
+                <section class="article__main">
+                  <p>
+                    Натуралист, философ, исследователь ледников, «Джон с гор» и «Отец национальных парков», Джон Мюр (John Muir) был еще и «Горным Иоанном Крестителем». Родился в Шотландии в 1838 г. Попал в Америку в 11 лет, семья переехала и устроилась в Висконсине. С детства воспитанный в строгих пресвитерианских традициях, он хорошо знал Библию. Окончил университет. Оказался со временем в совсем еще ненаселённой тогда Калифорнии. Был поражен красотой гор и пустынь… Я не стану описывать его   многочисленные заслуги,
+                  </p>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </section>
+                <footer class="article__footer">
+                </footer>
+              </article>
+
+              <article class="articles__item article">
+                <img class="article__img" src="img/loading.svg"
+                data-src="img/john_muir.jpg"
+                data-src-mobile="img/1.jpg"
+                data-src-tablet="img/2.jpg"
+                width="700" height="400" alt="john_muir">
+
+                <h3 class="article__topic">
+                  Джон Мюр: «Божья любовь проявляется в пейзаже, как в лице»
+                </h3>
+                <section class="article__main">
+                  <p>
+                    Натуралист, философ, исследователь ледников, «Джон с гор» и «Отец национальных парков», Джон Мюр (John Muir) был еще и «Горным Иоанном Крестителем». Родился в Шотландии в 1838 г. Попал в Америку в 11 лет, семья переехала и устроилась в Висконсине. С детства воспитанный в строгих пресвитерианских традициях, он хорошо знал Библию. Окончил университет. Оказался со временем в совсем еще ненаселённой тогда Калифорнии. Был поражен красотой гор и пустынь… Я не стану описывать его   многочисленные заслуги,
+                  </p>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </section>
+                <footer class="article__footer">
+                </footer>
+              </article>
+
+              <article class="articles__item article">
+                <img class="article__img" src="img/loading.svg"
+                data-src="img/john_muir.jpg"
+                data-src-mobile="img/1.jpg"
+                data-src-tablet="img/2.jpg"
+                width="700" height="400" alt="john_muir">
+
+                <h3 class="article__topic">
+                  Джон Мюр: «Божья любовь проявляется в пейзаже, как в лице»
+                </h3>
+                <section class="article__main">
+                  <p>
+                    Натуралист, философ, исследователь ледников, «Джон с гор» и «Отец национальных парков», Джон Мюр (John Muir) был еще и «Горным Иоанном Крестителем». Родился в Шотландии в 1838 г. Попал в Америку в 11 лет, семья переехала и устроилась в Висконсине. С детства воспитанный в строгих пресвитерианских традициях, он хорошо знал Библию. Окончил университет. Оказался со временем в совсем еще ненаселённой тогда Калифорнии. Был поражен красотой гор и пустынь… Я не стану описывать его   многочисленные заслуги,
+                  </p>
+                  <a href="">ПОДРОБНЕЕ</a>
+                </section>
+                <footer class="article__footer">
+                </footer>
+              </article> -->
+        </section>
+
+        <section class="page-main__side side">
+          <h2 class="visually-hidden"></h2>
+
+          <article class="news__item new">
+            <h3 class="new__topic">
+              МЫ В СОЦСЕТЯХ
+            </h3>
+            <section class="article__main">
+              <div class="page-main__social social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/ahilla_ru">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/groups/ahilla/">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                        <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--telegram" href="https://t.me/ahilla_ru">
+                      <svg viewBox="0 -31 512 512" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m123.195312 260.738281 63.679688 159.1875 82.902344-82.902343 142.140625 112.976562 100.082031-450-512 213.265625zm242.5-131.628906-156.714843 142.941406-19.519531 73.566407-36.058594-90.164063zm0 0"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--twitter" href="https://twitter.com/ahilla_ru">
+                      <svg viewBox="0 -47 512.00203 512" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m191.011719 419.042969c-22.140625 0-44.929688-1.792969-67.855469-5.386719-40.378906-6.335938-81.253906-27.457031-92.820312-33.78125l-30.335938-16.585938 32.84375-10.800781c35.902344-11.804687 57.742188-19.128906 84.777344-30.597656-27.070313-13.109375-47.933594-36.691406-57.976563-67.175781l-7.640625-23.195313 6.265625.957031c-5.941406-5.988281-10.632812-12.066406-14.269531-17.59375-12.933594-19.644531-19.78125-43.648437-18.324219-64.21875l1.4375-20.246093 12.121094 4.695312c-5.113281-9.65625-8.808594-19.96875-10.980469-30.777343-5.292968-26.359376-.863281-54.363282 12.476563-78.851563l10.558593-19.382813 14.121094 16.960938c44.660156 53.648438 101.226563 85.472656 168.363282 94.789062-2.742188-18.902343-.6875-37.144531 6.113281-53.496093 7.917969-19.039063 22.003906-35.183594 40.722656-46.691407 20.789063-12.777343 46-18.96875 70.988281-17.433593 26.511719 1.628906 50.582032 11.5625 69.699219 28.746093 9.335937-2.425781 16.214844-5.015624 25.511719-8.515624 5.59375-2.105469 11.9375-4.496094 19.875-7.230469l29.25-10.078125-19.074219 54.476562c1.257813-.105468 2.554687-.195312 3.910156-.253906l31.234375-1.414062-18.460937 25.230468c-1.058594 1.445313-1.328125 1.855469-1.703125 2.421875-1.488282 2.242188-3.339844 5.03125-28.679688 38.867188-6.34375 8.472656-9.511718 19.507812-8.921875 31.078125 2.246094 43.96875-3.148437 83.75-16.042969 118.234375-12.195312 32.625-31.09375 60.617187-56.164062 83.199219-31.023438 27.9375-70.582031 47.066406-117.582031 56.847656-23.054688 4.796875-47.8125 7.203125-73.4375 7.203125zm0 0"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--livejournal" href="https://ahilla-ru.livejournal.com/">
+                      <svg enable-background="new 0 0 512 512" height="40" id="Слой_1" version="1.1" viewBox="0 0 512 512" width="40" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M464.526,314.746l-0.063,0.031L245.193,22.29l-0.031,0.031C233.037,7.353,213.757,0.008,191.508,0.008  c-27.03,0-58.372,10.844-86.402,32.093c-51.154,38.749-72.278,97.59-47.966,132.62l-0.031,0.031l219.272,292.458l0.063-0.031  l188.491,54.813L464.526,314.746z M401.279,427.055c-7.25,5.5-12.063,13.031-14.281,21.221l-80.496-23.406  c19.344-29.623,25.719-66.061,17.844-100.371c30.654,17.063,67.246,20.969,100.935,10.404l0.219,84.217  C417.06,418.992,408.528,421.555,401.279,427.055z M233.068,71.693l20.624,27.53c-24.093,2.625-50.591,13.187-74.652,31.405  c-24.124,18.28-41.561,40.999-50.716,63.591l-20.593-27.499c0.75-3.5,1.718-6.625,2.593-9.218  c3.531-10.125,9.094-20.187,16.5-29.999c7.875-10.437,17.53-19.968,28.592-28.374c11.062-8.375,22.843-15.031,34.998-19.781  c11.406-4.468,22.593-7.062,33.249-7.656C226.381,71.538,229.568,71.475,233.068,71.693z M301.754,275.811L201.476,142.035  c8.344-5.406,17.031-9.906,25.936-13.375c11.375-4.469,22.593-7.031,33.25-7.688c2.688-0.125,5.874-0.156,9.374,0.031  l145.212,193.679c-13.874,3.814-28.499,4.814-43.153,2.75C343.876,313.434,318.908,298.652,301.754,275.811z M144.698,216.032  c0.75-3.468,1.719-6.593,2.594-9.188c3.562-10.125,9.093-20.218,16.53-29.999c5.75-7.656,12.468-14.812,19.937-21.374  l100.245,133.746l-0.031,0.031c17.156,22.842,24.438,51.061,20.47,79.402c-2.063,14.781-7.095,28.656-14.563,41L144.698,216.032z   M128.73,63.601c10.593-8,21.811-14.218,33.342-18.437c10.25-3.719,20.437-5.687,29.436-5.687c10.75,0,19.218,2.812,23.187,7.75  l2.031,2.656c-24.093,2.656-50.591,13.218-74.653,31.436c-24.124,18.25-41.561,40.999-50.685,63.592l-2.063-2.75  C80.294,129.161,91.137,92.067,128.73,63.601z" id="Livejournal_1_"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/ahilla.ru/">
+                      <svg id="Bold" enable-background="new 0 0 24 24" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z"/><path d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z"/><circle cx="18.406" cy="5.595" r="1.439"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--youtube" href="https://www.youtube.com/c/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9%D0%9F%D0%BB%D1%83%D0%B6%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2">
+                      <svg height="40" viewBox="-21 -117 682.66672 682" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <footer class="new__footer">
+            </footer>
+          </article>
+
+          <article class="news__item new">
+            <h3 class="new__topic">
+              АРХИВЫ
+            </h3>
+            <section class="article__main">
+              <form class="new__form">
+                <label class="new__label" for="archives"></label>
+                <select name="" id="archives">
+                  <option value>выберите месяц</option>
+                  <option value="https://ahilla.ru/2020/01/">январь</option>
+                  <option value="https://ahilla.ru/2020/02/">февраль</option>
+                  <option value="https://ahilla.ru/2020/03/">март</option>
+                  <option value="https://ahilla.ru/2020/04/">апрель</option>
+                  <option value="https://ahilla.ru/2020/05/">май</option>
+                  <option value="https://ahilla.ru/2020/06/">июнь</option>
+                  <option value="https://ahilla.ru/2020/07/">июль</option>
+                  <option value="https://ahilla.ru/2020/07/">август</option>
+                  <option value="https://ahilla.ru/2020/09/">сентябрь</option>                    <option value="">октябрь</option>
+                  <option value="https://ahilla.ru/2020/10/">октябрь</option>
+                  <option value="https://ahilla.ru/2020/11/">ноябрь</option>
+                  <option value="https://ahilla.ru/2020/12/">декабрь</option>
+                </select>
+              </form>
+            </section>
+            <footer class="new__footer">
+            </footer>
+          </article>
+
+          <article class="news__item new">
+            <h3 class="new__topic">
+              ПОИСК ПО МЕТКАМ
+            </h3>
+            <section class="article__main">
+              <button type="button"><a href="https://ahilla.ru/tag/aleksej-pluzhnikov/">АЛЕКСЕЙ ПЛУЖНИКОВ</a></button>
+              <button type="button"><a>ахила</a></button>
+              <button type="button"><a>ксения волянская</a></button>
+              <button type="button"><a>ПРАВОСЛАВИЕ ЦЕМЕНТА</a></button>
+              <button type="button"><a>рпц</a></button>
+              <button type="button"><a>упц</a></button>
+              <button type="button"><a>украина</a></button>
+              <button type="button"><a>видео</a></button>
+              <button type="button"><a>добро и зло</a></button>
+              <button type="button"><a>иерархия</a></button>
+              <button type="button"><a>ИСТОРИЯ</a></button>
+              <button type="button"><a>парадоксы православия</a></button>
+              <button type="button"><a>патриарх кирил</a></button>
+              <button type="button"><a>реформа рпц</a></button>
+              <button type="button"><a>СВЯЩЕННИКИ</a></button>
+              <button type="button"><a>системопоклонство</a></button>
+              <button type="button"><a>финансы церкви</a></button>
+              <button type="button"><a>христианство</a></button>
+              <button type="button"><a>человечное</a></button>
+              <button type="button"><a>ЧУВСТВА ВЕРУЮЩИХ</a></button>
+            </section>
+            <footer class="new__footer">
+            </footer>
+          </article>
+
+          <article class="news__item new">
+            <h3 class="new__topic">
+              САМОЕ ИНТЕРЕСНОЕ
+            </h3>
+            <section class="article__main">
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+              <a class="new__source" href="#">
+                «Я надеюсь на революцию в РПЦ»
+              </a>
+                <p>- просмотров: 106 107</p>
+            </section>
+            <footer class="new__footer">
+            </footer>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__feedback">
+          <p class="page-footer__text feedback">
+            Независимый аналитический проект «Ахилла»
+            Перепечатка материалов сайта возможна только
+            при условии активной гиперссылки
+          </p>
+        </div>
+        <div class="page-footer__write">
+          <p class="page-footer__text write">
+            Напишите нам: ahilla.ru@gmail.com ВКонтакте,
+            Facebook, Twitter, Живой Журнал
+          </p>
+        </div>
+        <div class="page-footer__help">
+          <p class="page-footer__text help">
+            Помочь проекту: Яндекс-кошелек: 410013762179717
+            Карта Сбербанка: 4276 1600 2495 4340 PayPal
+          </p>
+        </div>
+        <div class="page-footer__opinion">
+          <p class="page-footer__text opinion">
+            Мнение авторов может не совпадать с мнением редакции.
+            За достоверность информации ответственность несут авторы.
+          </p>
+        </div>
+      </div>
+      <h3 class="page-footer__copyright">Copyright © 2017 Ahilla.ru</h3>
+    </footer>
+    <script src="../js/common.js"></script>
+  </body>
+</html>
