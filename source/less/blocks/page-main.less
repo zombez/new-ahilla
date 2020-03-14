@@ -35,7 +35,7 @@
 .pagination__nav {
   display: block;
   position: absolute;
-  top: -20px;
+  top: -10px;
 }
 
 .pagination__text {
@@ -45,56 +45,40 @@
   overflow: hidden;
 }
 
-// .pagination__list {
-//   padding: 5px 10px;
-//   display: flex;
-//   list-style: none;
-// }
-
-// .pagination__item {
-//   padding: 5px 10px;
-//   border-left: 1px solid @st;
-// }
-
-// .pagination__numbers {
-  // padding: 5px 10px;
-  // border-left: 1px solid @st;
-  // color: #000000;
-  // background-color: #ffffff;
+.pagination__numbers {
+  padding: 5px 10px;
+  border-left: 1px solid @st;
+  color: #000000;
+  background-color: #ffffff;
   // outline: 0;
-  // text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-  // text-transform: uppercase;
-  // padding-top: 3px;
-  // padding-bottom: 2px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  // position: relative;
-  // overflow: hidden;
-  // z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: @hov;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+  }
 
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   background-color: @hov;
-  //   transform: translateX(-101%);
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   z-index: -1;
-  // }
+  &:hover {
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
 
-  // &:hover {
-  //   color: #ffffff;
-  //   transition: 0.5s ease-in-out;
-
-  //   &:before {
-  //     transform: translateX(0);
-  //     transition: 0.5s ease-in-out;
-  //   }
-  // }
-// }
+    &:before {
+      transform: translateX(0);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
 
 // .pagination__numbers:hover {
 //   color: #ffffff;
@@ -152,15 +136,10 @@
 
   // нумерация страниц журнала в планшете
 
-  // .newszine-pagination {
-  //   margin-left: -185px;
-  //   display: block;
-  // }
-
-  // .pagination__link .site-list__item {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
+  .newszine-pagination {
+    margin-left: -185px;
+    display: block;
+  }
 
   // бар в планшете
 
