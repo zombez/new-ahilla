@@ -33,9 +33,9 @@
 }
 
 .pagination__nav {
-  display: block;
+  // display: block;
   position: absolute;
-  top: -10px;
+  top: -26px;
 }
 
 .pagination__text {
@@ -45,8 +45,18 @@
   overflow: hidden;
 }
 
+.pagination__list {
+  display: flex;
+  list-style: none;
+}
+
+.pagination__item {
+  padding-left: 5px;
+}
+
 .pagination__numbers {
   padding: 5px 10px;
+  display: block;
   border-left: 1px solid @st;
   color: #000000;
   background-color: #ffffff;
@@ -80,20 +90,9 @@
   }
 }
 
-// .pagination__numbers:hover {
-//   color: #ffffff;
-//   background-color: @st;
-// }
-
-// .pagination__numbers:nth-child(5):hover {
-//   color: #000000;
-//   background-color: #ffffff;
-// }
-
-
 .dots {
-  padding: 0;
-  border: none;
+  // padding: 0;
+  // border: none;
 }
 
 // бар
@@ -137,7 +136,7 @@
   // нумерация страниц журнала в планшете
 
   .newszine-pagination {
-    margin-left: -185px;
+    margin-left: -230px;
     display: block;
   }
 
