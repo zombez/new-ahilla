@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 25px 25px 0 25px;
-  background-color: burlywood;
+  // background-color: burlywood;
 }
 
 // блоки
@@ -12,7 +12,7 @@
 }
 
 .page-main__articles {
-  background-color: cornflowerblue;
+  // background-color: cornflowerblue;
 }
 
 .articles__item {
@@ -26,7 +26,7 @@
 
 .newszine-pagination {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -35,7 +35,7 @@
 .pagination__nav {
   // display: block;
   position: absolute;
-  top: -26px;
+  top: -25px;
 }
 
 .pagination__text {
@@ -54,15 +54,23 @@
   padding-left: 5px;
 }
 
+.pagination__item:nth-child(4),
+.pagination__item:nth-child(7) {
+  border-right: 1px solid @st;
+}
+
+.pagination__item:nth-child(5) {
+  padding-top: 5px;
+}
+
 .pagination__numbers {
   padding: 5px 10px;
   display: block;
   border-left: 1px solid @st;
   color: #000000;
   background-color: #ffffff;
-  // outline: 0;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -90,7 +98,7 @@
   }
 }
 
-.dots {
+.pagination__dots {
   // padding: 0;
   // border: none;
 }
@@ -137,7 +145,12 @@
 
   .newszine-pagination {
     margin-left: -230px;
+    padding-top: 20px;
     display: block;
+  }
+
+  .pagination__nav {
+    top: -25px;
   }
 
   // бар в планшете
