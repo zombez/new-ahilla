@@ -25,6 +25,65 @@
   padding-left: 20px;
   border-left: 3px solid @st;
 }
+
+// блок читайте также
+
+.form-main__read {
+  margin-top: -25px;
+  background-color: yellowgreen;
+}
+
+.read__title {
+  padding: 10px 0 0 20px;
+}
+
+.read__list {
+  padding: 0 0 15px 20px;
+}
+
+.read__item {
+  padding-top: 10px;
+  list-style: none;
+
+  &::before {
+    content: ">";
+  }
+}
+
+// блок форма
+
+.form-main__general {
+  margin-top: -14px;
+  padding: 15px 25px;
+  text-align: center;
+  background-color: turquoise;
+}
+
+.form-payment {
+  width: 400px;
+  height: 180px;
+  padding-left: 20px;
+  border: 1px solid @st;
+  border-bottom: none;
+  text-align: start;
+}
+
+// блок соцсети
+
+.form-main__social {
+  background-color: lightslategrey;
+}
+
+.form-social__list {
+  padding: 25px 25px;
+  display: flex;
+}
+
+.form-social__item {
+  padding-left: 1px;
+  list-style: none;
+}
+
 @media (min-width: @tablet-width) {
   .form-main__wrapper {
     display: flex;
@@ -38,6 +97,13 @@
 
   .form-article__img {
     width: 100%;
+  }
+
+  // блок форма в планшете
+
+  .form-payment {
+    // margin-left: 80px;
+    display: block;
   }
 }
 
