@@ -10,8 +10,37 @@
 }
 
 .form-articles__item {
+  width: 100%;
   // height: 400px;
   margin: 25px 0 25px 0;
+  padding: 25px 25px;
   background-color: sienna;
   // overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .form-main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-main__articles {
+    width: 100%;
+    padding: 0 25px 0 25px;
+  }
+
+  .form-article__img {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main__articles {
+    width: 66%;
+    padding: 0 25px 0 25px;
+  }
+
+  .form-main__side {
+    width: 30%;
+  }
 }
