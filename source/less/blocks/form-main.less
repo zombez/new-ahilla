@@ -255,6 +255,50 @@
   }
 }
 
+// модально окно
+
+.modal__social {
+  width: 400px;
+  height: 300px;
+  margin-top: -270px;
+  margin-left: -374px;
+  padding: 10px 10px 10px 0;
+  display: block;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  // visibility: hidden;
+}
+
+.modal__list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.modal__item {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: #000000;
+}
+
+.modal__item:nth-child(1)::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-image: url("../img/icon-4talk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 @media (min-width: @tablet-width) {
   .form-main__wrapper {
     display: flex;
