@@ -1,11 +1,9 @@
-.form-main__main {
-  margin-top: -30px;
-}
 
 .form-main__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 25px 25px 0 25px;
+  margin-top: -30px;
+  padding: 25px 5px 0 5px;
   background-color: burlywood;
 }
 
@@ -261,16 +259,37 @@
 
 // модально окно
 
-.modal__social {
+.form-social__modal {
   width: 400px;
   height: 300px;
   margin-top: -270px;
   margin-left: -374px;
   padding: 10px 10px 10px 0;
-  display: block;
+  // display: block;
   border: 1px solid #000000;
   background-color: #ffffff;
   // visibility: hidden;
+}
+
+// .modal__social {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.social__blocl1 {
+  padding: 0 0 0 0;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.social__blocl2{
+  padding: 0 0 0 0;
+  border-top: 1px solid #000000;
+}
+
+.social__blocl3 {
+  padding: 0 0 0 0 ;
+  border-top: 1px solid #000000;
 }
 
 .modal__list {
@@ -281,9 +300,9 @@
 }
 
 .modal__item {
-  width: 30px;
-  height: 30px;
-  margin: 5px 5px;
+  width: 15px;
+  height: 15px;
+  margin: 5px 100px 10px 10px;
   position: relative;
   border: 1px solid #000000;
   border-radius: 3px;
@@ -292,15 +311,23 @@
 
 .modal__item:nth-child(1)::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: block;
   position: absolute;
   top: 2px;
-  left: 2px;
+  left: 1px;
   background-image: url("../img/icon-4talk.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.modal__link {
+  padding: 1px 0px 0px 20px;
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
 }
 
 @media (min-width: @tablet-width) {
