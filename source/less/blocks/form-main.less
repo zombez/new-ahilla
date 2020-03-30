@@ -221,9 +221,9 @@
   }
 }
 
-.form-social__item:nth-child(4) {
-  padding-top: -5px;
-  padding-right: 5px;
+.social__od {
+  margin-left: -4px;
+  margin-top: -4px;
 }
 
 .form-social__btn {
@@ -258,39 +258,31 @@
   background-color: #ffffff;
 }
 
-.form-social__modal {
-  width: 32px;
-  height: 32px;
-  margin-left: 5px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  background-color: #000000;
-  position: relative;
-
-  &::before {
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-image: url("../img/more.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-}
-
 // модально окно
 
 .form-social__modal {
   width: 400px;
   height: 275px;
-  margin-top: -330px;
+  // margin-top: -330px;
+  position: relative;
   // margin-left: -374px;
   // padding: 10px 10px 10px 0;
-  display: none;
+  // display: none;
   border: 1px solid #000000;
   background-color: #ffffff;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
 }
 
 // .modal__social {
@@ -325,6 +317,7 @@
 .modal__list1,
 .modal__list2,
 .modal__list3 {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
