@@ -197,6 +197,7 @@
 // блок соцсети
 
 .form-main__social {
+  position: relative;
   background-color: lightslategrey;
 }
 
@@ -264,25 +265,24 @@
   width: 400px;
   height: 275px;
   // margin-top: -330px;
-  position: relative;
+  position: absolute;
+  top: 1407px;
   // margin-left: -374px;
   // padding: 10px 10px 10px 0;
-  // display: none;
+  display: none;
   border: 1px solid #000000;
   background-color: #ffffff;
+}
 
-  &::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    opacity: 0.3;
-  }
+.form-social__close {
+  margin-top: 4px;
+  margin-left: 374px;
+  padding: 20px 0 0 15px;
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 // .modal__social {
