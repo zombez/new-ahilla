@@ -86,8 +86,9 @@
 // форма
 
 .form-payment {
-  width: 400px;
+  width: 300px;
   height: 180px;
+  margin-left: -21px;
   padding-left: 20px;
   border: 1px solid @st;
   border-bottom: none;
@@ -202,14 +203,16 @@
 }
 
 .form-social__list {
-  padding: 25px 25px;
+  padding: 25px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form-social__item {
   width: 32px;
   height: 32px;
-  margin-left: 5px;
+  margin-left: 33px;
+  margin-top: 5px;
   padding: 5px 0 0 5px;
   list-style: none;
   border: 1px solid #000000;
@@ -230,8 +233,8 @@
 .form-social__btn {
   width: 32px;
   height: 32px;
-  margin-left: 5px;
-  // padding: 5px 0 0 5px;
+  margin-top: 5px;
+  margin-left: 15px;
   position: relative;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -253,6 +256,7 @@
 .form-social__counter {
   width: 20px;
   height: 32px;
+  margin-top: 5px;
   padding: 8px 0 0 5px;
   border: 1px solid @st;
   border-radius: 5px;
@@ -652,9 +656,43 @@
   // блок форма в планшете
 
   .form-payment {
+    width: 400px;
+    height: 180px;
+    margin-left: 90px;
+  }
+
+  .form-payment {
     // margin-left: 80px;
     display: block;
   }
+
+  // соцсети в форме в планшете
+
+  .form-social__list {
+    padding: 25px 25px;
+    flex-wrap: nowrap;
+  }
+
+  .form-social__item {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 5px 0 0 5px;
+  }
+
+  .form-social__counter {
+    margin-top: 0;
+  }
+
+  .form-social__btn {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  // модалка в планшете
+
+
 }
 
 @media (min-width: @desktop-width) {
@@ -666,4 +704,9 @@
   .form-main__side {
     width: 30%;
   }
+
+  .form-payment {
+    margin-left: 170px;
+  }
+
 }
