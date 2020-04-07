@@ -281,7 +281,7 @@
 
 .form-social__modal {
   width: 310px;
-  height: 500px;
+  height: 1200px;
   position: absolute;
   top: 1580px;
   display: none;
@@ -301,6 +301,34 @@
 }
 
 // модально окно
+
+.modal__list{
+  margin: 20px -47px 0px -37px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.modal__item{
+  width: 30%;
+  height: 50px;
+  margin: 10px 0 60px 0;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #000000;
+    // background-color: cornflowerblue;
+  }
+}
+
+.modal__link {
+  margin: 0 0 0 0;
+}
 
 
 @media (min-width: @tablet-width) {
