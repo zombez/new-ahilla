@@ -305,26 +305,55 @@
 // модально окно
 
 .modal__list{
-  margin: -1px -35px 48px -35px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
 .modal__item{
-  width: 30%;
-  height: 50px;
-  margin: 10px 0 60px 0;
+  width: 95px;
+  height: 95px;
+  margin: -8px 0px 33px 6px;
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
+    width: 80px;
+    height: 80px;
     display: block;
     position: absolute;
-    width: 95px;
-    height: 95px;
-    border: 1px solid #000000;
-    // background-color: cornflowerblue;
+    background-repeat: no-repeat;
+  }
+}
+
+.modal__item:nth-child(1) {
+  background-color: lightskyblue;
+
+  &::before {
+    top: 5px;
+    left: 5px;
+    background-image: url("../img/icon-4talk.svg");
+  }
+}
+
+.modal__item:nth-child(2) {
+  background-color: mediumslateblue;
+
+  &::before {
+    top: 12px;
+    left: 12px;
+    background-image: url("../img/mailru.svg");
+  }
+}
+
+.modal__item:nth-child(3) {
+  background-color: firebrick;
+
+  &::before {
+    top: 11px;
+    left: 10px;
+    background-image: url("../img/pinterest.svg");
   }
 }
 
