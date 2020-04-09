@@ -281,9 +281,11 @@
   display: none;
 }
 
+// модально окно
+
 .form-social__modal {
   width: 310px;
-  height: 1200px;
+  height: 920px;
   position: absolute;
   top: 1580px;
   display: none;
@@ -302,7 +304,10 @@
   opacity: 0.3;
 }
 
-// модально окно
+// .form-social__modal {
+//   position: fixed;
+//   top: 0;
+// }
 
 .modal__list{
   padding: 0;
@@ -338,7 +343,7 @@
 }
 
 .modal__item:nth-child(2) {
-  background-color: mediumslateblue;
+  background-color: #354D73;
 
   &::before {
     top: 12px;
@@ -357,10 +362,50 @@
   }
 }
 
+.modal__item:nth-child(4) {
+  background-color: forestgreen;
+
+  &::before {
+    top: 8px;
+    left: 6px;
+    background-image: url("../img/evernote.svg");
+  }
+}
+
+.modal__item:nth-child(5) {
+  background-color: orange;
+
+  &::before {
+    top: 8px;
+    left: 6px;
+    background-image: url("../img/evernote.svg");
+  }
+}
+
+.modal__item:nth-child(6) {
+  background-color: #2F353B;
+
+  &::before {
+    top: 8px;
+    left: 6px;
+    background-image: url("../img/tumblr.svg");
+  }
+}
+
+.modal__item:nth-child(7) {
+  background-color: dodgerblue;
+
+  &::before {
+    top: 8px;
+    left: 6px;
+    background-image: url("../img/livejournal1.svg");
+  }
+}
+
 .modal__link {
   margin-top: 100px;
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
   text-decoration: none;
   color: @st;
@@ -376,6 +421,10 @@
 
 .modal__link__U2 {
   display: none;
+}
+
+.modal__link__P {
+  margin-top: 0;
 }
 
 
