@@ -285,12 +285,14 @@
 
 .form-social__modal {
   width: 310px;
-  height: 920px;
-  position: absolute;
-  top: 1580px;
+  height: 480px;
+  position: fixed;
+  top: 0px;
   display: none;
   border: 1px solid #000000;
   background-color: #ffffff;
+  overflow: auto;
+  z-index: 10;
 }
 
 .form-social__close {
@@ -303,11 +305,6 @@
   background-repeat: no-repeat;
   opacity: 0.3;
 }
-
-// .form-social__modal {
-//   position: fixed;
-//   top: 0;
-// }
 
 .modal__list{
   padding: 0;
@@ -610,8 +607,8 @@
 
   .form-social__list {
     padding: 25px 25px;
-    // display: flex;
-    // flex-wrap: nowrap;
+    justify-content: start;
+    margin: -34px 0px -4px -15px;
   }
 
   .form-social__item {
@@ -679,375 +676,382 @@
     background-color: #ffffff;
   }
 
+  // модалка в планшете
+
   .form-social__modal {
     width: 400px;
     height: 275px;
+    margin-left: -25px;
     position: absolute;
     top: 1407px;
-    display: none;
-    border: 1px solid #000000;
-    background-color: #ffffff;
   }
 
   .form-social__close {
-    margin-top: 4px;
     margin-left: 374px;
-    padding: 20px 0 0 15px;
-    display: block;
-    position: absolute;
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    opacity: 0.3;
   }
 
-  // модалка в планшете
-
-  .social__blocl1 {
-    height: 86px;
-    // margin: 0 0 0 0;
-    // display: flex;
-    // flex-wrap: wrap;
-  }
-
-  .social__blocl2{
-    height: 105px;
-    // margin: 0 0 0 0;
-    border-top: 1px solid #000000;
-  }
-
-  .social__blocl3 {
-    height: 42px;
-    // padding: 0 0 0 0 ;
-    border-top: 1px solid #000000;
-  }
-
-  .social__blocl4 {
-    padding: 1px 0px 0px 26px;
-    border-top: 1px solid #000000;
-  }
-
-  .modal__list1,
-  .modal__list2,
-  .modal__list3 {
-    margin: 0;
+  .modal__list{
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
+  }
 
-    &:hover {
-      // width: 20px;
-      // height: 20px;
-      border: 1px solid @st;
-      background-color: @st;
+  .modal__item{
+    width: 20px;
+    height: 20px;
+    margin: -8px 0px 33px 6px;
+    background-color: #000000!important;
+
+    &::before {
+
     }
   }
 
-  .modal__item1 {
-    width: 15px;
-    height: 15px;
-    margin: 6px 104px 0px 8px;
-    position: relative;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    background-color: #000000;
-  }
+  // .social__blocl1 {
+  //   height: 86px;
+  //   // margin: 0 0 0 0;
+  //   // display: flex;
+  //   // flex-wrap: wrap;
+  // }
 
-  .modal__item2 {
-    width: 15px;
-    height: 15px;
-    margin: 3px 104px 3px 8px;
-    position: relative;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    background-color: #000000;
-  }
+  // .social__blocl2{
+  //   height: 105px;
+  //   // margin: 0 0 0 0;
+  //   border-top: 1px solid #000000;
+  // }
 
-  .modal__item3 {
-    width: 15px;
-    height: 15px;
-    margin: 3px 100px 0px 8px;
-    position: relative;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    background-color: #000000;
-  }
+  // .social__blocl3 {
+  //   height: 42px;
+  //   // padding: 0 0 0 0 ;
+  //   border-top: 1px solid #000000;
+  // }
 
-  .modal__item1:nth-child(1)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/icon-4talk.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .social__blocl4 {
+  //   padding: 1px 0px 0px 26px;
+  //   border-top: 1px solid #000000;
+  // }
 
-  .modal__item1:nth-child(2)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/mailru.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__list1,
+  // .modal__list2,
+  // .modal__list3 {
+  //   margin: 0;
+  //   padding: 0;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   list-style: none;
 
-  .modal__item1:nth-child(3)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pinterest.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  //   &:hover {
+  //     // width: 20px;
+  //     // height: 20px;
+  //     border: 1px solid @st;
+  //     background-color: @st;
+  //   }
+  // }
 
-  .modal__item1:nth-child(4)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/evernote.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1 {
+  //   width: 15px;
+  //   height: 15px;
+  //   margin: 6px 104px 0px 8px;
+  //   position: relative;
+  //   border: 1px solid #000000;
+  //   border-radius: 3px;
+  //   background-color: #000000;
+  // }
 
-  .modal__item1:nth-child(5)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/icon-4talk.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2 {
+  //   width: 15px;
+  //   height: 15px;
+  //   margin: 3px 104px 3px 8px;
+  //   position: relative;
+  //   border: 1px solid #000000;
+  //   border-radius: 3px;
+  //   background-color: #000000;
+  // }
 
-  .modal__item1:nth-child(6)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/tumblr.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item3 {
+  //   width: 15px;
+  //   height: 15px;
+  //   margin: 3px 100px 0px 8px;
+  //   position: relative;
+  //   border: 1px solid #000000;
+  //   border-radius: 3px;
+  //   background-color: #000000;
+  // }
 
-  .modal__item1:nth-child(7)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/icon-4talk.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(1)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/icon-4talk.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item1:nth-child(8)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(2)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/mailru.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(1)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/zoology.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(3)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pinterest.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(2)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/blogger.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(4)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/evernote.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(3)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/digg.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(5)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/icon-4talk.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(4)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(6)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/tumblr.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(5)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(7)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/icon-4talk.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(6)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item1:nth-child(8)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(7)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(1)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/zoology.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(8)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(2)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/blogger.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(9)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(3)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/digg.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(10)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(4)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item2:nth-child(11)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(5)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__item3:nth-child(1)::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 1px;
-    background-image: url("../img/pocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  // .modal__item2:nth-child(6)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__link1,
-  .modal__link2,
-  .modal__link3 {
-    padding: 1px 0px 0px 18px;
-    display: block;
-    font-size: 11px;
-    text-decoration: none;
-    color: #000000;
-  }
+  // .modal__item2:nth-child(7)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
 
-  .modal__link4 {
-    font-size: 8px;
-    text-decoration: none;
-    color: #000000;
-  }
+  // .modal__item2:nth-child(8)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // .modal__item2:nth-child(9)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // .modal__item2:nth-child(10)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // .modal__item2:nth-child(11)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // .modal__item3:nth-child(1)::before {
+  //   content: "";
+  //   width: 10px;
+  //   height: 10px;
+  //   display: block;
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 1px;
+  //   background-image: url("../img/pocket.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // .modal__link1,
+  // .modal__link2,
+  // .modal__link3 {
+  //   padding: 1px 0px 0px 18px;
+  //   display: block;
+  //   font-size: 11px;
+  //   text-decoration: none;
+  //   color: #000000;
+  // }
+
+  // .modal__link4 {
+  //   font-size: 8px;
+  //   text-decoration: none;
+  //   color: #000000;
+  // }
 }
 
 @media (min-width: @desktop-width) {

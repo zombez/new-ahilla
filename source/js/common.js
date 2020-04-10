@@ -93,7 +93,7 @@ searchToggle.addEventListener('click', function() {
 
 // для фото ленивая загрузка
 
-var blazy = new Blazy({
+let blazy = new Blazy({
   breakpoints: [{
     width: 658,
     src: 'data-src-mobile'
@@ -108,9 +108,9 @@ var blazy = new Blazy({
 
 // модальное окно
 
-var modal = document.getElementById('myModal');
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("form-social__close")[0];
+let modal = document.getElementById('myModal');
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("form-social__close")[0];
 
   btn.onclick = function() {
     modal.style.display = "block";
@@ -125,3 +125,8 @@ var span = document.getElementsByClassName("form-social__close")[0];
       modal.style.display = "none";
     }
   }
+
+  // скролл для модального окна
+
+  let myModal = document.getElementById("myModal");
+  myModal.scrollTop = myModal.scrollHeight;
